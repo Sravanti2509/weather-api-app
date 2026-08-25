@@ -952,349 +952,449 @@
     /* =========================
        TABLET
     ========================= */
+/* =========================
+   TABLET
+========================= */
 
-    @media (max-width: 1000px) {
+@media (max-width: 1000px) {
 
-      .content {
-        width: 92%;
-      }
+  .content {
+    width: 92%;
+  }
 
-      .forecast-list {
-        justify-content: flex-start;
-      }
+  .forecast-list {
+    justify-content: flex-start;
+  }
 
-      .details {
-        grid-template-columns: repeat(2, 1fr);
-      }
+  .details {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-      .info-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 
-    /* =========================
-       MOBILE
-    ========================= */
+/* =========================
+   MOBILE
+========================= */
 
-    @media (max-width: 700px) {
+@media (max-width: 700px) {
 
-      .navbar {
-        height: 65px;
+  /* NAVBAR */
 
-        padding: 0 18px;
-      }
+  .navbar {
+    height: 64px;
+    padding: 0 16px;
+  }
 
-      .logo {
-        font-size: 23px;
-      }
+  .logo {
+    font-size: 22px;
+  }
 
-      .nav-right {
-        display: none;
-      }
+  .nav-right {
+    display: none;
+  }
 
 
-      .hero {
-        padding: 60px 20px 38px;
-      }
+  /* HERO */
 
-      .hero small {
-        font-size: 10px;
+  .hero {
+    padding: 48px 16px 32px;
+  }
 
-        padding: 7px 12px;
-      }
+  .hero small {
+    font-size: 10px;
+    padding: 7px 11px;
+  }
 
-      .hero h1 {
-        font-size: 43px;
+  .hero h1 {
+    font-size: 38px;
+    line-height: 1.08;
+    letter-spacing: -2px;
+  }
 
-        letter-spacing: -2.8px;
+  .hero p {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
 
-        line-height: 1.03;
-      }
+    font-size: 14px;
+    line-height: 1.65;
+  }
 
-      .hero p {
-        font-size: 14px;
 
-        line-height: 1.7;
-      }
+  /* =========================
+     SEARCH
+  ========================= */
 
+  .search-area {
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 0 14px;
+  }
 
-      .search-area {
-        margin-bottom: 42px;
+  .search-box {
+    width: 100%;
 
-        padding: 0 17px;
-      }
+    display: flex;
+    flex-direction: column;
 
-      .search-box {
-        flex-direction: column;
+    gap: 10px;
+  }
 
-        gap: 10px;
-      }
+  .search-box input {
+    width: 100% !important;
+    height: 54px;
 
-      .search-box input,
-      .search-box button,
-      #locationButton {
-        width: 100%;
+    padding: 0 17px;
 
-        height: 56px;
-      }
+    font-size: 16px;
 
+    border-radius: 15px;
+  }
 
-      .content {
-        width: calc(100% - 28px);
-      }
+  .search-box button,
+  #locationButton {
+    width: 100% !important;
+    height: 54px;
 
+    font-size: 15px;
 
-      .current-card {
-        padding: 25px 18px;
+    border-radius: 15px;
+  }
 
-        border-radius: 23px;
-      }
 
-      .location h2 {
-        font-size: 24px;
-      }
+  /* CONTENT */
 
-      .location p {
-        font-size: 13px;
-      }
+  .content {
+    width: calc(100% - 28px);
+    max-width: 100%;
+  }
 
-      .weather-icon {
-        width: 57px;
-        height: 57px;
 
-        font-size: 33px;
+  /* CURRENT WEATHER */
 
-        border-radius: 17px;
-      }
+  .current-card {
+    width: 100%;
 
-      .temperature-section {
-        padding: 32px 0;
-      }
+    padding: 22px 16px;
 
-      .temperature {
-        font-size: 62px;
+    border-radius: 21px;
+  }
 
-        letter-spacing: -4px;
-      }
+  .location h2 {
+    font-size: 23px;
+  }
 
-      .condition {
-        font-size: 15px;
-      }
+  .location p {
+    font-size: 13px;
+  }
 
 
-      .details {
-        grid-template-columns: repeat(2, 1fr);
+  /* WEATHER ICON */
 
-        gap: 9px;
-      }
+  .weather-icon {
+    width: 56px;
+    height: 56px;
 
-      .detail {
-        padding: 17px 9px;
+    font-size: 31px;
 
-        border-radius: 15px;
-      }
+    border-radius: 16px;
+  }
 
-      .detail strong {
-        font-size: 14px;
-      }
 
+  /* TEMPERATURE */
 
-      .section {
-        margin-top: 50px;
-      }
+  .temperature-section {
+    padding: 28px 0;
+  }
 
-      .section-title {
-        margin-bottom: 21px;
-      }
+  .temperature {
+    font-size: 60px;
+    letter-spacing: -3.5px;
+  }
 
-      .section-title h2 {
-        font-size: 23px;
-      }
+  .condition {
+    font-size: 14px;
+  }
 
-      .section-title p {
-        font-size: 12px;
-      }
 
+  /* DETAILS */
 
-      /* HOURLY */
+  .details {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+  }
 
-      .hourly-container {
-        width: calc(100vw - 28px);
+  .detail {
+    min-width: 0;
+    padding: 16px 9px;
+    border-radius: 15px;
+  }
 
-        margin-left: 50%;
+  .detail strong {
+    font-size: 14px;
+  }
 
-        transform: translateX(-50%);
 
-        padding: 5px 14px 17px;
+  /* SECTION */
 
-        justify-content: flex-start;
+  .section {
+    margin-top: 42px;
+  }
 
-        gap: 10px;
+  .section-title {
+    margin-bottom: 18px;
+  }
 
-        overflow-x: auto;
-      }
+  .section-title h2 {
+    font-size: 22px;
+  }
 
-      .hour {
-        min-width: 105px;
+  .section-title p {
+    font-size: 12px;
+  }
 
-        flex: 0 0 105px;
 
-        padding: 18px 13px;
+  /* =========================
+     HOURLY FORECAST
+  ========================= */
 
-        border-radius: 17px;
-      }
+  .hourly-container {
 
-      .hour span {
-        margin-bottom: 12px;
+    width: 100%;
 
-        font-size: 11px;
-      }
+    margin: 0;
 
-      .hour strong {
-        margin-bottom: 10px;
+    padding: 5px 2px 16px;
 
-        font-size: 27px;
-      }
+    display: flex;
 
-      .hour b {
-        font-size: 16px;
-      }
+    justify-content: flex-start;
 
+    gap: 10px;
 
-      /* =========================
-         MOBILE 5 DAY FORECAST
-      ========================= */
+    overflow-x: auto;
 
-      .forecast-list {
-        width: calc(100vw - 28px);
+    scroll-snap-type: x mandatory;
 
-        max-width: none;
+    scrollbar-width: none;
+  }
 
-        margin-left: 50%;
+  .hourly-container::-webkit-scrollbar {
+    display: none;
+  }
 
-        transform: translateX(-50%);
+  .hour {
 
-        padding: 5px 14px 18px;
+    min-width: 108px;
 
-        display: flex;
+    flex: 0 0 108px;
 
-        flex-direction: row;
+    padding: 17px 12px;
 
-        justify-content: flex-start;
+    border-radius: 17px;
 
-        align-items: stretch;
+    scroll-snap-align: start;
+  }
 
-        gap: 10px;
+  .hour span {
+    margin-bottom: 11px;
+    font-size: 11px;
+  }
 
-        overflow-x: auto;
-      }
+  .hour strong {
+    margin-bottom: 9px;
+    font-size: 26px;
+  }
 
-      .forecast-day {
-        flex: 0 0 145px;
+  .hour b {
+    font-size: 15px;
+  }
 
-        width: 145px;
 
-        min-height: 175px;
+  /* =========================
+     5 DAY FORECAST
+  ========================= */
 
-        padding: 19px 12px;
+  .forecast-list {
 
-        border-radius: 18px;
-      }
+    width: 100%;
 
-      .day-name strong {
-        font-size: 14px;
-      }
+    max-width: none;
 
-      .day-name span {
-        font-size: 11px;
-      }
+    margin: 0;
 
-      .forecast-icon {
-        margin: 17px 0;
+    padding: 5px 2px 18px;
 
-        font-size: 32px;
-      }
+    display: flex;
 
-      .forecast-condition {
-        font-size: 11px;
-      }
+    flex-direction: row;
 
-      .forecast-temp {
-        margin-top: 11px;
-      }
+    justify-content: flex-start;
 
-      .forecast-temp strong {
-        font-size: 17px;
-      }
+    align-items: stretch;
 
-      .forecast-temp span {
-        margin-left: 5px;
+    gap: 10px;
 
-        font-size: 13px;
-      }
+    overflow-x: auto;
 
+    scroll-snap-type: x mandatory;
 
-      .info-grid {
-        grid-template-columns: 1fr;
+    scrollbar-width: none;
+  }
 
-        gap: 12px;
-      }
+  .forecast-list::-webkit-scrollbar {
+    display: none;
+  }
 
-      .info-card {
-        padding: 22px;
+  .forecast-day {
 
-        border-radius: 18px;
-      }
+    flex: 0 0 150px;
 
-      footer {
-        padding: 25px 15px;
-      }
-    }
+    width: 150px;
 
+    min-height: 180px;
 
-    /* =========================
-       SMALL MOBILE
-    ========================= */
+    padding: 19px 12px;
 
-    @media (max-width: 400px) {
+    border-radius: 18px;
 
-      .hero h1 {
-        font-size: 37px;
-      }
+    scroll-snap-align: start;
+  }
 
-      .temperature {
-        font-size: 55px;
-      }
+  .day-name strong {
+    font-size: 14px;
+  }
 
-      .forecast-list {
-        width: calc(100vw - 20px);
+  .day-name span {
+    font-size: 11px;
+  }
 
-        padding-left: 10px;
+  .forecast-icon {
+    margin: 17px 0;
+    font-size: 31px;
+  }
 
-        padding-right: 10px;
-      }
+  .forecast-condition {
+    font-size: 11px;
+  }
 
-      .forecast-day {
-        flex-basis: 140px;
+  .forecast-temp {
+    margin-top: 10px;
+  }
 
-        width: 140px;
-      }
+  .forecast-temp strong {
+    font-size: 17px;
+  }
 
-      .hourly-container {
-        width: calc(100vw - 20px);
+  .forecast-temp span {
+    margin-left: 5px;
+    font-size: 13px;
+  }
 
-        padding-left: 10px;
 
-        padding-right: 10px;
-      }
+  /* =========================
+     INFO CARDS
+  ========================= */
 
-      .hour {
-        min-width: 100px;
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 11px;
+  }
 
-        flex-basis: 100px;
-      }
-    }
+  .info-card {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+
+  /* FOOTER */
+
+  footer {
+    padding: 25px 15px;
+  }
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 400px) {
+
+  .navbar {
+    padding: 0 13px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+
+  .hero {
+    padding: 40px 14px 28px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+    letter-spacing: -1.7px;
+  }
+
+
+  /* SEARCH */
+
+  .search-area {
+    padding: 0 12px;
+  }
+
+  .search-box {
+    gap: 9px;
+  }
+
+  .search-box input {
+    height: 52px;
+    font-size: 15px;
+  }
+
+  .search-box button,
+  #locationButton {
+    height: 52px;
+    font-size: 14px;
+  }
+
+
+  .content {
+    width: calc(100% - 24px);
+  }
+
+
+  /* CURRENT */
+
+  .current-card {
+    padding: 20px 14px;
+  }
+
+  .temperature {
+    font-size: 54px;
+    letter-spacing: -3px;
+  }
+
+
+  /* FORECAST */
+
+  .forecast-day {
+    flex-basis: 145px;
+    width: 145px;
+  }
+
+  .hour {
+    min-width: 102px;
+    flex-basis: 102px;
+  }
+}
   </style>
 </head>
 
